@@ -6,16 +6,47 @@
 	padding: 0px;
 	box-sizing: border-box;
 }
-body {
+.flip {
 	background-color: #d2fffd;
-}
-section {
-	width: 340px;
 	padding: 30px;
+	position: relative;
+	perspective: 1100px;
+}
+.card {
+	width: 340px;
 	background-color: #000000;
 	margin: 50px auto;
+	padding: 15px;
 	box-shadow: 10px 10px 30px rgba(82, 82, 82, 0.1);
 	border-radius: 10px;
+	position: relative;
+	transition: .4s;
+	transform-style: preserve-3d;
+}
+.front, .back {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	color: #fff;
+}
+.back {
+	background-color: #000000;
+	box-shadow: 10px 10px 30px rgba(82, 82, 82, 0.1);
+	border-radius: 10px;
+	position: relative;
+	transition: .4s;
+	transform-style: preserve-3d;
+	transform: rotateY(360deg);
+}
+
+section #logo{
+	width: 20%;
+	height: auto;
+	align-items: center;
+}
+.flip:hover .card{
+	transform: rotateY(360deg)
 }
 section nav.menu {
 	width: 100%;
@@ -82,22 +113,22 @@ section article a.btnView {
 section ul.contact {
 	margin: 15px auto 25px;
 }
-section ul.cantact li {
+section ul.cantact p {
 	width: 100%;
 	padding: 10px 0px;
 	border-bottom: 1px solid #eee;
 }
-section ul.contact li:last-child {
+section ul.contact p:last-child {
 	border-bottom: none;
 }
-section ul.contact li i {
+section ul.contact p i {
 	width: 20%;
 	text-align: center;
 	color: #a1a1a1;
 	font-size: 13px;
 }
 
-section ul.contact li span {
+section ul.contact p span {
 	font-weight: normal;
 	font-size: 10px;
 	font-family: "orbitron";
