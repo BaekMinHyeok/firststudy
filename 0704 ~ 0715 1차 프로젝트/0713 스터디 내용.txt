@@ -1,0 +1,56 @@
+
+1. orderId(productId 와 동일하게 최신순1씩증가)를 적용시키기 
+orderId로 통일
+
+2. objdectId(product에 고유 _id )를 배열로 받아서 드리기
+
+3. 소비자는 배송상태 수정 x 관리자만 배송상태 수정 o 
+배송관련 api를 만들기
+
+4. 주문정보 조회 상품 이름 ,가격, 배송상태
+
+
+
+관리자도 배송관련 수정
+
+
+
+exec메소드 : 인수로 전달받은 문자열에 정규식과 일치하는지 탐색을 수행한 결과를 배열(없다면 null)로 반환
+
+
+
+상품의 이름을 배열로 받기
+
+res.로 orderId 받기
+
+
+const orderInfo = await order 
+
+각각의 변수들이 있는지 체크
+
+jwt 
+secreat키를 암호화해서 
+
+header 알고리즘 타입 등 
+어드민을 확인할 수 있는 정보
+
+Payload 필요한 정보
+
+시그니처 header payload 합쳐야 signature 
+
+
+const { orderId } = req.body;
+if (!orderId) {
+  return res.status(400).json("입력 값이 부족합니다.");
+}
+
+
+decoded.email.
+
+토큰에서 이메일 가져와서 저장
+
+
+
+
+
+

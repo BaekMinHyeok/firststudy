@@ -1,0 +1,14 @@
+1. productId와 같이 최근 값 보내주는 코드  category에 추가할지
+
+2. 다시 category delete 확인
+
+product id 값은 url에 노출시키지 않음 보안때문에
+
+
+검색으로 있나 없나 검사 controllar
+
+로그인할때 마이페이지 조회면 토큰
+관리자가 다른 아이디 조회할때 토큰+ userId
+
+find
+findOne

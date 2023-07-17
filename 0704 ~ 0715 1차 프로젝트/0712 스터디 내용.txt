@@ -1,0 +1,25 @@
+1. 카테고리 삭제
+2. 이메일 검색 주문정보 조회
+3. 주문삭제
+
+확인 완료 
+
+1. 주문 등록할때 productId를 불러서 같이 조회되게한다.
+2. status를 기본값으로 ready를 넣고 _id 값으로 구분한다음 배송상태를 업데이트 해야한다
+
+1번의 경우 order에는productId만 같이 저장해두고
+프론트에서 productId 받아서 다시 상품 조회 하면 될 것 같습니다
+
+{
+	"name": "민혁",
+	"phoneNumber": "1234",
+	"address": "서울어딘가",
+	"address2": "아파트",
+	"comments": "집앞",
+    "objectId" : "64ad7b3caeca3318e3849e9d",
+    "price" : 12,
+    "quantity": 2
+}
+
+
+관리자 페이지에서
